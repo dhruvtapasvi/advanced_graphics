@@ -4,6 +4,6 @@ The repository contains Matlab / GNU Octave code, which should be used together 
 
 # Content
 
-colour - lecture "Color and Light" - conversion from spetral emission to RGB
-grad_domain - an example demonstrating gradient domain image processing
+* colour - lecture "Color and Light" - conversion from spetral emission to RGB
+* grad_domain - an example demonstrating gradient domain image processing
 
