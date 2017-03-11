@@ -6,4 +6,5 @@ The repository contains Matlab / GNU Octave code, which should be used together 
 
 * colour - lecture "Color and Light" - conversion from spetral emission to RGB
 * grad_domain - an example demonstrating gradient domain image processing
+* tmo_util - tone-mapping helper functions
 
