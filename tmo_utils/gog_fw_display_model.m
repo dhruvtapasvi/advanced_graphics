@@ -30,7 +30,7 @@ if( ~exist( 'L_refl', 'var' ) )
     L_refl = 0;
 end
 if( exist( 'k', 'var' )  )
-    L_refl = k*L_refl/(2*pi);
+    L_refl = k*L_refl/pi;
 end
 
 if( any( V(:) )<0 || any( V(:) )>1 )
