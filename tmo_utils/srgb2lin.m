@@ -4,7 +4,7 @@ function L = srgb2lin( p )
 % p = lin2srgb( L )
 %
 % p - pixel values
-% L - linear RGB (or luminance)
+% L - relative linear RGB (or luminance), normalized to the range 0-1
 %
 % (c) 2012 Rafal Mantiuk
 

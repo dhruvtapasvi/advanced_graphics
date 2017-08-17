@@ -3,7 +3,7 @@ function p = lin2srgb( L )
 % 
 % p = lin2srgb( L )
 %
-% L - linear RGB (or luminance)
+% L - linear RGB (or luminance), normalized to the range 0-1
 % p - pixel values
 %
 % (c) 2012 Rafal Mantiuk
@@ -14,6 +14,6 @@ t = 0.0031308;
 a = 0.055;
 
 p(L<=t) = L(L<=t)*12.92;
-p(L>t) = ((1+a)*L(L>t)).^(1/2.4) - a;
+p(L>t) = (1+a)*(L(L>t)).^(1/2.4) - a;
 
 end
