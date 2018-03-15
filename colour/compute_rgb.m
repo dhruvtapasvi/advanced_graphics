@@ -10,9 +10,11 @@ XYZ2RGB = [ 3.240479 -1.537150 -0.498535
             -0.969256 1.875992 0.041556
             0.055648 -0.204043 1.057311];
 
-% TODO: compute RGB values (in rec.709 colour space) for the emission spectrum L
+% Compute RGB values (in rec.709 colour space) for the emission spectrum L
+XYZ = (trapz(lambda, L .* XYZ_spec))'
+RGB = XYZ2RGB * XYZ
 
 % Display a 100x100 rect of that the color, apply gamma to convert from
 % linear to gamma corrected RGB
-%imshow( repmat( reshape( RGB.^(1/2.2), [1 1 3] ), [100 100 1] ) )
+imshow( repmat( reshape( RGB.^(1/2.2), [1 1 3] ), [100 100 1] ) )
 
