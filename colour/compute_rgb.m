@@ -12,7 +12,7 @@ XYZ2RGB = [ 3.240479 -1.537150 -0.498535
 
 % Compute RGB values (in rec.709 colour space) for the emission spectrum L
 XYZ = (trapz(lambda, L .* XYZ_spec))'
-RGB = XYZ2RGB * XYZ
+RGB = XYZ2RGB * XYZ - XYZ
 
 % Display a 100x100 rect of that the color, apply gamma to convert from
 % linear to gamma corrected RGB
