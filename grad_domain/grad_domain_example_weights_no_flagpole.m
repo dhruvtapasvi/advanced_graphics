@@ -52,7 +52,7 @@ img_l_new = img_l_new - mean(img_l_new(:)) + 0.5;
 img_rgb_res = img_rgb .* repmat( img_l_new ./ img_l, [1 1 3] );
 
 clf;
-imshow( img_rgb_res );
+imshow( img_l_new );
 %pfsview( img_rgb_res );
 
 
